@@ -50,23 +50,23 @@
     transition: .5s;
 }
 
-.bg-primary{
+.bg-primary {
     background-color: var(--primary) !important;
 }
 
-.btn-outline-primary{
+.btn-outline-primary {
     border-color: var(--primary);
     color: var(--primary);
     border-radius: 0;
 }
 
-.btn-outline-primary:hover{
+.btn-outline-primary:hover {
     border-color: var(--secondary);
     background-color: var(--primary) !important;
     color: var(--light);
 }
 
-.btn-outline-primary:focus{
+.btn-outline-primary:focus {
     box-shadow: none !important;
 }
 
@@ -92,7 +92,7 @@
     border: 0;
 }
 
-.btn-light:hover{
+.btn-light:hover {
     background-color: var(--dark);
     color: var(--light);
 }
@@ -265,9 +265,16 @@
     overflow: hidden;
     opacity: 0;
     transition: .5s;
+    cursor: pointer;
+    backdrop-filter: blur(30px);
 }
 
 .courses-item:hover .courses-overlay {
+    height: 100%;
+    opacity: 1;
+}
+
+.courses-item:focus .courses-overlay {
     height: 100%;
     opacity: 1;
 }
@@ -401,7 +408,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .logo-size {
+    .logo-size-m {
         max-width: 200px;
     }
 
@@ -440,7 +447,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index:1;
+    z-index: 1;
 }
 
 @media (max-width: 992px) {
@@ -505,4 +512,29 @@
         font-size: 18px;
         line-height: 24px;
     }
+}
+
+@media (max-width: 1399px) {
+    .bg-course-1{
+        min-height: 700px !important;
+    }
+    .bg-course-2{
+        min-height: 700px !important;
+    }
+}
+
+.bg-course-1 {
+    background-image: url('/img/courses-1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    min-height: 500px;
+}
+
+.bg-course-2 {
+    background-image: url('/img/courses-2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    min-height: 500px;
 }
