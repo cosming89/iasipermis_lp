@@ -524,7 +524,6 @@
 }
 
 .bg-course-1 {
-    background-image: url('/img/courses-1.jpg');
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -532,7 +531,6 @@
 }
 
 .bg-course-2 {
-    background-image: url('/img/courses-2.jpg');
     background-size: cover;
     background-position: center;
     height: 100%;
